@@ -813,35 +813,38 @@ label aonl_day2_alt:
     mz "К нам тоже это чудо недавно заходило расписываться."
     show sl smile pioneer with dspr
     sl "Замечательно, значит при деле. Можно и чай попить."
+    stop ambience
+    scene cg aonl_tea_party_sad with dissolve
     "Мы расселись за столом и принялись за угощения."
     un "Славя?"
     sl "Что?"
     un "А почему ты так за Семёном приглядываешь, с ним что-то не так?"
-    show sl normal pioneer with dspr
     sl "Как сказать."
     "Славя задумчиво помешала чай."
     sl "Вроде мальчик как мальчик..." 
     sl "И всё же он какой-то хмурый, словно тяжесть на душе носит, но всё держит в себе, старается казаться безразличным." 
     sl "За такими стоит присматривать."
     un "А почему именно ты?"
-    show sl smile2 pioneer with dspr
     sl "Ну, я ведь помощница вожатой, за всем должна следить."
     un "У… Понятно."
     sl "А ты почему интересуешься?"
     "Славя пытливо посмотрела на меня."
     un "Эээ… Да так, просто, к слову спросила."
-    show mz normal pioneer glasses with dspr
     mz "Мне завтра пыль с книжек протереть надо, выделишь кого-нибудь?"
-    show sl normal pioneer with dspr 
     sl "Завтра все заняты, посмотри по обстановке. Может, Семёну поручу."
     th "Он будет здесь? Снова?"
     "От этой мысли сердце забилось чаще."
     th "Да что же со мной происходит?"
+    scene cg aonl_un_tea_party_happy with dissolve
     "Дальше Славя рассказывала, как планирует выступать на соревнованиях от родной деревни." 
     "А Женя даже не делала вид, что ей это интересно..." 
     "Больше интересуясь тем, будут ли ещё гости в библиотеке."
     play sound sfx_dinner_horn_processed
+    scene bg int_library_day with dissolve
     stop music fadeout 2
+    show mz normal pioneer glasses at left
+    show sl normal pioneer at right
+    play ambience ambience_library_day fadeout 1 fadein 2
     sl "Так, пора собираться девочки."
     mz "Идите без меня, я буду позже."
     "Женя стала убирать со стола."
@@ -853,6 +856,7 @@ label aonl_day2_alt:
     mz "Бери ту пачку, у меня в домике их полно."
     un "Спасибо."
     mz "Угу."
+    stop ambience
     window hide
     
     play ambience ambience_camp_center_day fadeout 1 fadein 2

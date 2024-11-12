@@ -73,6 +73,7 @@ init 2:
     
     
     
+    
     ################
     # CG
     ################
@@ -112,7 +113,11 @@ init 2:
     image cg aonl_un_on_boot_day = aonl_imgs + "cg/un_on_boot_day.png"
     image cg aonl_un_on_boot_sad = aonl_imgs + "cg/un_on_boot_sad.png"
     image cg aonl_un_cry_1 = aonl_imgs + "cg/un_cry_1.png"
-    image cg aonl_un_cry_2 = aonl_imgs + "cg/un_cry_2.png"    
+    image cg aonl_un_cry_2 = aonl_imgs + "cg/un_cry_2.png"
+    image cg aonl_un_hugs = aonl_imgs + "cg/un_hugs.png"
+    image cg aonl_un_tea_party_happy = aonl_imgs + "cg/tea_party_happy.png"
+    image cg aonl_tea_party_sad = aonl_imgs + "cg/tea_party_sad.png"
+    
     
     
     

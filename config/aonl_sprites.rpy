@@ -847,6 +847,39 @@ init 2:
     "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us25/body1.png', (0, 0), aonl_imgs + 'sprites/normal/us25/pioneer1.png', (0, 0), aonl_imgs + 'sprites/normal/us25/smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
     True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us25/body1.png', (0, 0), aonl_imgs + 'sprites/normal/us25/pioneer1.png', (0, 0), aonl_imgs + 'sprites/normal/us25/smile.png'))
     
+    # Ульяна
+    # Полотенце
+
+    image aonl_us normal towel = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/normal.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/normal.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/normal.png'))
+
+    image aonl_us laugh towel = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/laugh.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/laugh.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/laugh.png'))
+
+    image aonl_us laugh2 towel = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/laugh2.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/laugh2.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/laugh2.png'))
+
+    image aonl_us grin towel = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/grin.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/grin.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/grin.png'))
+
+    image aonl_us sad towel = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/sad.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/sad.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/sad.png'))
+
+    image aonl_us smile towel = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/us/body2.png', (0, 0), aonl_imgs + 'sprites/normal/us/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/us/smile.png'))
+
     # Славя 25
     # Зимняя одежда
     image aonl_sl25 normal future_winter = ConditionSwitch(
@@ -883,6 +916,16 @@ init 2:
     "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile2.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
     "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile2.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
     True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile2.png'))
+    
+#    image aonl_sl25 sad future_winter = ConditionSwitch(
+#    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+#    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+#    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'))
+
+#    image aonl_sl25 surprise future_winter = ConditionSwitch(
+#    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+#    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+#    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'))
     
     # Пионерская форма
     image aonl_sl25 normal future = ConditionSwitch(

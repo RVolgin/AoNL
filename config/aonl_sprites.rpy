@@ -917,15 +917,15 @@ init 2:
     "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile2.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
     True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat2.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile2.png'))
     
-#    image aonl_sl25 sad future_winter = ConditionSwitch(
-#    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
-#    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
-#    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'))
+    image aonl_sl25 sad future_winter = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/sad.png'))
 
-#    image aonl_sl25 surprise future_winter = ConditionSwitch(
-#    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
-#    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
-#    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'))
+    image aonl_sl25 surprise future_winter = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/coat3.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/surprise.png'))
     
     # Пионерская форма
     image aonl_sl25 normal future = ConditionSwitch(

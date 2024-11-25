@@ -530,7 +530,7 @@ init 2:
     image sl scared aonl_body = im.Composite((900,1080), (0,0), aonl_imgs + "sprites/normal/sl/sl_4_body2.png", (0,0), "images/sprites/normal/sl/sl_4_scared.png")
     image sl tender aonl_body = im.Composite((900,1080), (0,0), aonl_imgs + "sprites/normal/sl/sl_4_body2.png", (0,0), "images/sprites/normal/sl/sl_4_tender.png")
     
-    # Мику с распущенными волосами, голая (взято из БКРР)
+    # у с распущенными волосами, голая (взято из БКРР)
     # Упрощённая версия, объявлена только дневная версия
     image mi cry aonl_body = im.Composite((900,1080), (0,0), aonl_imgs + "sprites/normal/mi/mi_1_body_loo.png", (0,0), "images/sprites/normal/mi/mi_1_cry.png")
     image mi dontlike aonl_body = im.Composite((900,1080), (0,0), aonl_imgs + "sprites/normal/mi/mi_1_body_loo.png", (0,0), "images/sprites/normal/mi/mi_1_dontlike.png")
@@ -630,25 +630,91 @@ init 2:
 
 
 
-    # Мику полотенце
-    image aonl_mi angry towel = ConditionSwitch(
-    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
-    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
-    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'))
+    # Мику ночь
+    image aonl_mi cry night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/cry.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/cry.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/cry.png'))
 
+    image aonl_mi dontlike night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/dontlike.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/dontlike.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/dontlike.png'))
 
-    image aonl_mi angry towel = ConditionSwitch(
-    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
-    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
-    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'))
+    image aonl_mi laugh night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/laugh.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/laugh.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/laugh.png'))
 
+    image aonl_mi scared night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/scared.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/scared.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/scared.png'))
 
+    image aonl_mi shocked night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/shocked.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/shocked.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/shocked.png'))
 
-    image aonl_mi angry towel = ConditionSwitch(
-    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
-    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
-    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/towel3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'))
+    image aonl_mi shy night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/shy.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/shy.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/shy.png'))
 
+    image aonl_mi surprise night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/surprise.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/surprise.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_1_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night1.png', (0, 0), aonl_imgs + 'sprites/normal/mi/surprise.png'))
+
+    image aonl_mi cry_smile night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/cry_smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/cry_smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/cry_smile.png'))
+
+    image aonl_mi grin night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/grin.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/grin.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/grin.png'))
+
+    image aonl_mi happy night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/happy.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/happy.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/happy.png'))
+
+    image aonl_mi sad night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/sad.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/sad.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/sad.png'))
+
+    image aonl_mi smile night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'))
+
+    image aonl_mi angry night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'))
+
+    image aonl_mi normal night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/normal.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/normal.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/normal.png'))
+
+    image aonl_mi rage night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/rage.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/rage.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/rage.png'))
+
+    image aonl_mi serious night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/serious.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/serious.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/serious.png'))
+
+    image aonl_mi upset night = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/upset.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/upset.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/upset.png'))
 
 
 

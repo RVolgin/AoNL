@@ -4,7 +4,7 @@ init:
     #TODO: исправить во всех днях все метки #TODO и #FIXME
     
 init 2:
-    $ aonl_imgs = "art_of_new_life/images/"
+    $ aonl_imgs = "AoNL/images/"
     
     ################
     # BG

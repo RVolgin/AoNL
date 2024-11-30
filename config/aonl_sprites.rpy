@@ -687,9 +687,9 @@ init 2:
     True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/sad.png'))
 
     image aonl_mi smile night = ConditionSwitch(
-    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
-    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
-    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'))
+    "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'), im.matrix.tint(0.94, 0.82, 1.0) ), 
+    "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png'), im.matrix.tint(0.63, 0.78, 0.82) ), 
+    True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_2_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night2.png', (0, 0), aonl_imgs + 'sprites/normal/mi/smile.png') )
 
     image aonl_mi angry night = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/mi/mi_3_body_loo.png', (0, 0), aonl_imgs + 'sprites/normal/mi/night3.png', (0, 0), aonl_imgs + 'sprites/normal/mi/angry.png'), im.matrix.tint(0.94, 0.82, 1.0)), 

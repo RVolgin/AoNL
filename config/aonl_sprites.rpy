@@ -1037,4 +1037,26 @@ init 2:
     "persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/pioneer.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), 
     "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/pioneer.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), 
     True, im.Composite((900, 1080), (0, 0), aonl_imgs + 'sprites/normal/sl25/body.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/pioneer.png', (0, 0), aonl_imgs + 'sprites/normal/sl25/smile.png'))
+
+    # Славя тест
+    image sl_winter_far1 = "art_of_new_life/images/sprites/sl_winter_far1.png"
+    
+    # Телефон
+    image telefon = "art_of_new_life/images/sprites/Telefon1.png"
+    
+    #От Летомана
+    image cg 1acycle_sh_mi = "art_of_new_life/images/cg/acycle_sh_mi.jpg"
+    image bg 1acycle_multiverse_1 = "art_of_new_life/images/cg/acycle_multiverse_1.jpg"
+    image bg 1acycle_multiverse_2 = "art_of_new_life/images/cg/acycle_multiverse_2.jpg"
+    image bg 1acycle_multiverse_3 = "art_of_new_life/images/cg/acycle_multiverse_3.jpg"
+    image bg 1acycle_multiverse_4 = "art_of_new_life/images/cg/acycle_multiverse_4.jpg"
+    image 1acycle_boat_mask_2 = "art_of_new_life/images/sprites/acycle_boat_mask_2.png"
+    image 1acycle_boat_mask = "art_of_new_life/images/sprites/acycle_boat_mask.png"
+    image bg 1acycle_fall = "art_of_new_life/images/cg/acycle_fall.jpg"
+    image cg 1acycle_earth_from_space = "art_of_new_life/images/cg/acycle_earth_from_space.jpg"
+    image treshina = "art_of_new_life/images/sprites/treshina.png"
+    
+    
+    
+    
     

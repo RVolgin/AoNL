@@ -54,19 +54,17 @@ init 2:
     image bg aonl_int_lib_artist_night = aonl_imgs + "bg/int_lib_artist_night.jpg"
     image bg aonl_int_aidpost_night_light = aonl_imgs + "bg/int_aidpost_night_light.jpg"
     image bg aonl_ext_square_fog = aonl_imgs + "bg/ext_square_fog.png"
+    image bg aonl_ext_house_of_un_sunset1 = aonl_imgs + "bg/aonl_ext_house_of_un_sunset1.png"
+    image bg ext_house_of_un_night_7dl = aonl_imgs + "bg/ext_house_of_un_night_7dl.jpg"   
+    image bg ext_aidpost_nigh_after_rain = aonl_imgs + "bg/ext_aidpost_nigh_after_rain.png"
     
     
+    ################
+    # Video
+    ################
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    #video opening1 = "art_of_new_life/video/opening1.ogv"
     
     
     
@@ -95,6 +93,7 @@ init 2:
     image cg aonl_d6_un_mirror_2 = aonl_imgs + "cg/d6_un_mirror_2.jpg"
     image cg aonl_d6_un_dance = aonl_imgs + "cg/d6_un_dance.jpg"
     image cg aonl_un_farewell = aonl_imgs + "cg/un_farewell.png"
+    image cg aonl_un_farewell1 = aonl_imgs + "cg/un_farewell1.png"
     image cg aonl_cl_d4_un_knees = aonl_imgs + "cg/cl_d4_un_knees.jpg"
     image cg aonl_mi_shur_kiss = aonl_imgs + "cg/mi_shur_kiss.jpg"
     image cg aonl_epilogue_un_good_birth = aonl_imgs + "cg/epilogue_un_good_birth.jpg"
@@ -117,18 +116,8 @@ init 2:
     image cg aonl_un_hugs = aonl_imgs + "cg/un_hugs.png"
     image cg aonl_un_tea_party_happy = aonl_imgs + "cg/tea_party_happy.png"
     image cg aonl_tea_party_sad = aonl_imgs + "cg/tea_party_sad.png"
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    image cg un_dance1 = aonl_imgs + "cg/un_dance1.jpg"
+    image cg sl_dance1 = aonl_imgs + "cg/sl_dance1.png"
     
     
     
@@ -253,17 +242,7 @@ init 2:
     # Higurashi Kai VN BGM Kyouki he no Kairou
     $ aonl_strange = "art_of_new_life/music/Kyouki he no Kairou.mp3"
     
-    
-
-    
-    
-    
-    
-
-
-    
-    
-    
+    $ perebor = "art_of_new_life/music/perebor.mp3"
     
    
     
@@ -279,6 +258,13 @@ init 2:
     $ aonl_sfx_pen_writting = "art_of_new_life/sfx/aonl_pen_writting.mp3"
     $ aonl_amb_hard_rain_outside = "art_of_new_life/sfx/hard_rain_outside.ogg"
     $ aonl_winter_loop = "art_of_new_life/sfx/winter_loop.mp3"
+    $ mir_ruhnul = "art_of_new_life/sfx/mir_ruhnul.mp3"
+    $ volni = "art_of_new_life/sfx/volni.mp3"   
+    $ ydar_gitara = "art_of_new_life/sfx/ydar_gitara.ogg"  
+    $ Par = "art_of_new_life/sound1/Par.mp3"
+    $ Vetka_lomaetci = "art_of_new_life/sound1/Vetka_lomaetci.mp3"
+    $ padaet_vilka = "art_of_new_life/sound1/padaet_vilka.mp3"
+    
     
     ################
     # Голоса
@@ -355,6 +341,13 @@ init 2:
     ################
     # ATL
     ################
+    
+    transform aonl_wake_up1:
+        anchor (0.0, 0.0) pos (0.0, 0.0)
+        linear 0.1 pos (-7, -5)
+        linear 0.1 pos (0, 0)
+        linear 0.1 pos (7, -5)
+        linear 0.1 pos (0, 0)
 
     transform aonl_running:
         anchor (0.0, 0.0) pos (0.0, 0.0)
